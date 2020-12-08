@@ -21,7 +21,7 @@
  */
 
 export default {
-    updatablePaymentMethods: ['scheme', 'ideal', 'sepadirectdebit', 'oneclick'],
+    updatablePaymentMethods: ['scheme', 'ideal', 'sepadirectdebit', 'oneclick', 'bcmc'],
     paymentMethodTypeHandlers: {
         'scheme': 'handler_adyen_cardspaymentmethodhandler',
         'ideal': 'handler_adyen_idealpaymentmethodhandler',
@@ -31,6 +31,7 @@ export default {
         'sepadirectdebit': 'handler_adyen_sepapaymentmethodhandler',
         'sofort': 'handler_adyen_sofortpaymentmethodhandler',
         'paypal': 'handler_adyen_paypalpaymentmethodhandler',
-        'oneclick': 'handler_adyen_oneclickpaymentmethodhandler'
+        'oneclick': 'handler_adyen_oneclickpaymentmethodhandler',
+        'bcmc': 'handler_adyen_bancontactcardpaymentmethodhandler'
     }
 }
